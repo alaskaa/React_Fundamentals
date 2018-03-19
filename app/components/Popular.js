@@ -1,8 +1,8 @@
 var React = require('react');
 var PropTypes = require('prop-types');
 
-class SelectLanguage extends React.Component {
-  render() {
+// stateless functional component
+function SelectLanguage (props) {
     var languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python'];
 
     return (
@@ -16,7 +16,7 @@ class SelectLanguage extends React.Component {
           {lang}
           </li>
         )
-      }, this)}
+      })}
       </ul>
     )
   }
@@ -45,7 +45,7 @@ class Popular extends React.Component {
     });
   }
 
-  render() {  
+  render() {
     return (
       <div>
       <SelectLanguage
