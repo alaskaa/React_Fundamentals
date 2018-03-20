@@ -19,7 +19,7 @@ function SelectLanguage (props) {
       })}
       </ul>
     )
-  }
+
 }
 
 SelectLanguage.propTypes = {
